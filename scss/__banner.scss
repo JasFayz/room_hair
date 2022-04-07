@@ -1,4 +1,11 @@
 .banner {
     padding-top: 24px;
     padding-bottom: 60px;
+    &__slider {
+        & .splide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
