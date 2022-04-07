@@ -1,0 +1,105 @@
+.footer {
+    padding-top: 89px;
+
+    &__content {
+        &__top {
+            padding-bottom: 90px;
+            padding-left  : 90px;
+            position: relative;
+            & .section__title {
+                padding-right: 250px;
+            }
+
+            & .title {
+                font-family  : "Montserrat";
+                font-weight  : normal;
+                font-size    : 18px;
+                text-align   : left;
+                color        : #fff;
+                line-height  : 22px;
+                padding-right: 300px;
+                margin-bottom: 87px;
+            }
+
+            & .btn {
+                padding      : 20px 30px;
+                font-family  : Montserrat;
+                font-weight  : bold;
+                font-size    : 18px;
+                line-height  : 1.2;
+                text-align   : center;
+                color        : #fff;
+                margin-right : 32px;
+                border       : 3px solid transparent;
+                min-width    : 286px;
+                border-radius: 0;
+                margin-bottom: 30px;
+
+                &__danger {
+                    background-color: #d21113;
+                }
+
+                &__outline {
+                    border: 3px solid #fff;
+                }
+            }
+        }
+
+        &__bottom {
+            position: relative;
+            padding-left  : 90px;
+            padding-bottom: 77px;
+            display       : flex;
+            align-items   : center;
+        }
+    }
+
+    &__info {
+        padding-left: 47px;
+
+        & .copyright {
+            font-family  : "Montserrat", sans-serif;
+            font-weight  : normal;
+            font-size    : 18px;
+            line-height  : 22px;
+            text-align   : left;
+            color        : #fff;
+            margin-bottom: 11px;
+
+        }
+
+        & .nav {
+            &__item {
+                margin-right: 24px;
+            }
+
+            &__link {
+                font-family    : "Akrobat", sans-serif;
+                font-weight    : normal;
+                font-size      : 28px;
+                text-align     : left;
+                color          : #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__container {
+        position: relative;
+
+        &::before {
+            content            : '';
+            display            : block;
+            position           : absolute;
+            top                : -89px;
+            right              : 133px;
+            padding-top        : 89px;
+            width              : 518px;
+            height             : 933px;
+            background         : url('../images/footer_bg.svg');
+            background-repeat  : no-repeat;
+            background-position: 0;
+            background-size    : 100%
+        }
+    }
+}

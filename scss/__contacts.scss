@@ -1,7 +1,41 @@
 .contacts {
+
   &__map {
+    position: relative;
+
     & .map {
       filter: invert(1);
     }
+  }
+
+  &__info {
+    position        : absolute;
+    top             : 62px;
+    left            : 95px;
+    padding         : 74px 9px 94px 54px;
+    background-color: rgba($color: #D21113, $alpha: 0.78);
+
+    & .address {
+      font-family: "Akrobat", sans-serif;
+      font-weight: normal;
+      font-size  : 38px;
+      text-align : left;
+      line-height: 51px;
+      color      : #fff;
+      margin-bottom: 27px;
+
+    }
+
+    & .link {
+      text-decoration: none;
+      display    : block;
+      font-family: "Akrobat", sans-serif;
+      font-weight: normal;
+      font-size  : 27px;
+      line-height: 36px;
+      text-align : left;
+      color      : #fff;
+      margin-bottom: 18px;
+    } 
   }
 }

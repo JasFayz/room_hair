@@ -1,38 +1,41 @@
 /* USER VARIABLES SECTION */
 :root {
-  --accent: orange;
-  --fontsize: 16px;
-  --textcolor: #333;
+  --accent    : orange;
+  --fontsize  : 16px;
+  --textcolor : #333;
   --lineheight: 1.65;
-  --userfont: roboto-st, sans-serif;
+  --userfont  : roboto-st, sans-serif;
   --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 /* FONTS LOAD SECTION */
 
 @font-face {
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+  src        : url("../fonts/roboto-regular-webfont.woff2") format("woff2");
   font-family: "roboto-st";
   font-weight: 400;
-  font-style: normal;
+  font-style : normal;
 }
+
 @font-face {
-  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+  src        : url("../fonts/roboto-italic-webfont.woff2") format("woff2");
   font-family: "roboto-st";
   font-weight: 400;
-  font-style: italic;
+  font-style : italic;
 }
+
 @font-face {
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  src        : url("../fonts/roboto-bold-webfont.woff2") format("woff2");
   font-family: "roboto-st";
   font-weight: 700;
-  font-style: normal;
+  font-style : normal;
 }
+
 @font-face {
-  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+  src        : url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
   font-family: "roboto-st";
   font-weight: 700;
-  font-style: italic;
+  font-style : italic;
 }
 
 /* GENERAL CSS SETTINGS */
@@ -40,51 +43,56 @@
 ::placeholder {
   color: #666;
 }
+
 ::selection {
   background-color: var(--accent);
-  color: #fff;
+  color           : #fff;
 }
+
 input,
 textarea {
   outline: none;
 }
+
 input:focus:required:invalid,
 textarea:focus:required:invalid {
   border-color: red;
 }
+
 input:required:valid,
 textarea:required:valid {
   border-color: green;
 }
 
 body {
-  font-family: var(--userfont);
-  font-size: var(--fontsize);
-  line-height: var(--lineheight);
-  color: var(--textcolor);
-  min-width: 320px;
-  position: relative;
-  overflow-x: hidden;
+  font-family     : var(--userfont);
+  font-size       : var(--fontsize);
+  line-height     : var(--lineheight);
+  color           : var(--textcolor);
+  min-width       : 320px;
+  position        : relative;
+  overflow-x      : hidden;
   background-color: black;
 }
 
 .section__title {
-  font-family: "Akrobat", sans-serif;
-  font-weight: normal;
-  font-size: 38px;
-  text-align: left;
-  color: #8f8f8f;
+  font-family   : "Akrobat", sans-serif;
+  font-weight   : normal;
+  font-size     : 38px;
+  text-align    : left;
+  color         : #8f8f8f;
   text-transform: uppercase;
-  margin-bottom: 48px;
-  position: relative;
+  margin-bottom : 48px;
+  position      : relative;
+
   &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 55px;
-    height: 2px;
+    content         : "";
+    display         : block;
+    position        : absolute;
+    bottom          : -20px;
+    left            : 0;
+    width           : 55px;
+    height          : 2px;
     background-color: #d21113;
   }
 }
@@ -100,3 +108,23 @@ body {
 @import "./_stocks";
 @import "./_gallery";
 @import './_contacts';
+@import './_footer';
+
+
+.intro {
+  background-color: #fff;
+
+  &.black {
+    transition      : all 1.5s linear;
+    background-color: black;
+  }
+
+  & .header__logo {
+   
+
+    & .white {
+      transition: all 1.5s linear;
+      fill: #fff;
+    }
+  }
+}

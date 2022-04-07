@@ -1,11 +1,19 @@
 /* === DESKTOP FIRST === */
 
 /* xl <= Extra extra large (xxl) */
-@media (max-width: 1400px) {
-}
+@media (max-width: 1400px) {}
 
 /* lg <= Extra large (xl) */
 @media (max-width: 1200px) {
+  .footer__container::before {
+    right              : -20%;
+    background-position: 150%;
+  }
+
+  .header__nav .nav__item {
+    margin-right: 30px;
+  }
+
 }
 
 /* md <= Large (lg) */
@@ -13,11 +21,112 @@
   .teams__slider__card {
     flex-direction: column;
   }
+
   .teams__slider__card .body {
     padding: 178px 138px 82px 63px;
   }
+
   .teams__slider__card .image {
     margin-bottom: -120px;
+  }
+
+  .footer__content__bottom {
+    flex-direction: column;
+  }
+
+  .footer__container::before {
+    right: -45%;
+  }
+
+  .header__top {
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    order        : 1;
+    flex         : 1 0 100%;
+    text-align   : center;
+    margin-bottom: 30px;
+    position     : relative;
+    margin-left  : 0;
+    margin-right : 0;
+
+    &::before {
+      content         : '';
+      display         : block;
+      position        : absolute;
+      top             : 50%;
+      left            : 0;
+      width           : calc(50% - 170px);
+      height          : 2px;
+      background-color: #d21113;
+    }
+
+    &::after {
+      content         : '';
+      display         : block;
+      position        : absolute;
+      top             : 50%;
+      right           : 0;
+      width           : calc(50% - 170px);
+      height          : 2px;
+      background-color: #d21113;
+    }
+  }
+
+  .header__top .line {
+    display: none;
+  }
+
+  .header__social {
+    order: 2;
+  }
+
+  .header__phone {
+    order      : 3;
+    margin-left: auto;
+    flex       : initial;
+  }
+
+  .header__menu-btn {
+    display    : block;
+    margin-left: auto;
+  }
+
+  .header__bottom {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: space-between;
+    position       : relative;
+  }
+
+  .header__nav .nav {
+    flex-direction    : column;
+    padding           : 20px;
+    transition        : all 0.3s linear;
+    background-color  : #d21113;
+    // backdrop-filter: blur(16px);
+  }
+
+  .header__nav {
+    // height: 0;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    opacity   : 0;
+    z-index   : 1;
+    visibility: hidden;
+    transition: all 0.3s linear;
+  }
+
+  .header__nav .nav__link {
+    color: #fff;
+  }
+
+  .header__nav.show {
+    height    : 100%;
+    opacity   : 1;
+    visibility: visible;
   }
 }
 
@@ -26,16 +135,42 @@
   .teams__slider__card .body {
     flex-direction: column;
   }
+
   .teams__slider__card .desc {
     padding-left: 0;
-    margin-top: 40px;
+    margin-top  : 40px;
+  }
+
+  .footer__content__top,
+  .footer__content__bottom {
+    padding-left: 0;
+  }
+
+  .footer__content__top .section__title,
+  .footer__content__top .title {
+    padding-right: 0;
+  }
+
+  .contacts__info {
+    padding: 20px;
+    top    : 0;
+    left   : 0;
+  }
+
+  .contacts__info .address {
+    font-size  : 24px;
+    line-height: 30px;
+  }
+
+  .contacts__info .link {
+    font-size: 14px;
   }
 }
 
 /* xs <= Small (sm) */
 @media (max-width: 576px) {
   .teams__slider__card .body {
-    padding-left: 40px;
+    padding-left : 40px;
     padding-right: 40px;
   }
 }
@@ -43,34 +178,31 @@
 /* === MOBILE FIRST === */
 
 /* Custom (xs) */
-@media (min-width: 0) {
-}
+@media (min-width: 0) {}
 
 /* Small (sm) */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
 
 /* Medium (md) */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* Large (lg) */
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
 /* Extra large (xl) */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 /* Extra extra large (xxl) */
 @media (min-width: 1400px) {
   .teams__slider {
-    width: 71%;
+    width : 71%;
     margin: 0 auto;
   }
+
   .teams__slider .splide__arrow--prev {
     right: calc(100% + 100px);
   }
+
   .teams__slider .splide__arrow--next {
     left: calc(100% + 100px);
   }
