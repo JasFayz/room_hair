@@ -1,0 +1,77 @@
+.prices {
+  padding-bottom: 90px;
+  &__card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &__image {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__body {
+      padding: 48px 58px 28px 28px;
+      position: relative;
+      flex: 1 0 auto;
+      & .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 1.2;
+        text-align: left;
+        color: #000;
+        margin-bottom: 13px;
+      }
+      & .price {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 31px;
+        text-align: left;
+        line-height: 1.1;
+        color: #000;
+      }
+      & .oldprice {
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 31px;
+        text-align: left;
+        line-height: 1.1;
+        color: #000;
+        text-decoration: line-through;
+      }
+      & .discount {
+        padding: 14px 15px;
+        background-color: #d21113;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: left;
+        color: #fff;
+        position: absolute;
+        top: -30px;
+        right: 20px;
+      }
+    }
+    &__footer {
+      padding: 0 55px 47px 42px;
+      & .btn {
+        display: block;
+        width: 100%;
+        padding: 20px 24px;
+        border: 3px solid #d21113;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #d21113;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: #d21113;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

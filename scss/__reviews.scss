@@ -1,0 +1,21 @@
+.reviews {
+  background-color: black;
+  padding-bottom: 145px;
+  &__card {
+    &__image {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__footer {
+      padding: 21px 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+      font-size: 26px;
+      text-align: left;
+      color: #fff;
+      line-height: 32px;
+    }
+  }
+}

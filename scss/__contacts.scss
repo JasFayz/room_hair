@@ -1,0 +1,7 @@
+.contacts {
+  &__map {
+    & .map {
+      filter: invert(1);
+    }
+  }
+}

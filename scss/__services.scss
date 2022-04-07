@@ -1,0 +1,29 @@
+.services {
+  padding-bottom: 120px;
+  &__card {
+    background-color: #d21113;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &__body {
+      height: 193px;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__footer {
+      flex: 1 0 auto;
+      padding: 27px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 1;
+      text-align: left;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

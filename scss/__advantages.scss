@@ -1,0 +1,19 @@
+.advantages {
+  background-color: black;
+  padding-bottom: 80px;
+  &__card {
+    padding: 28px 15px 27px;
+    border: 1px solid #d21113;
+    height: 100%;
+    .icon {
+      margin-bottom: 70px;
+    }
+    .text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+      font-size: 22px;
+      text-align: left;
+      color: #fff;
+    }
+  }
+}
