@@ -109,10 +109,13 @@ body {
   font-size: var(--fontsize);
   line-height: var(--lineheight);
   color: var(--textcolor);
+  background-color: black;
+}
+
+#wrapper {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
-  background-color: black;
 }
 
 .section__title {
