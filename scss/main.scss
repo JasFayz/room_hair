@@ -1,16 +1,16 @@
 /* USER VARIABLES SECTION */
 :root {
-  --accent    : orange;
-  --fontsize  : 16px;
-  --textcolor : #333;
+  --accent: orange;
+  --fontsize: 16px;
+  --textcolor: #333;
   --lineheight: 1.65;
-  --userfont  : roboto-st, sans-serif;
+  --userfont: roboto-st, sans-serif;
   --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 /* FONTS LOAD SECTION */
 
-@import './_fonts';
+@import "./_fonts";
 
 /* GENERAL CSS SETTINGS */
 
@@ -20,7 +20,7 @@
 
 ::selection {
   background-color: var(--accent);
-  color           : #fff;
+  color: #fff;
 }
 
 input,
@@ -39,35 +39,37 @@ textarea:required:valid {
 }
 
 body {
-  font-family     : var(--userfont);
-  font-size       : var(--fontsize);
-  line-height     : var(--lineheight);
-  color           : var(--textcolor);
+  font-family: var(--userfont);
+  font-size: var(--fontsize);
+  line-height: var(--lineheight);
+  color: var(--textcolor);
   background-color: black;
 }
 #wrapper {
-  min-width       : 320px;
-  position        : relative;
-  overflow-x      : hidden;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  overflow-y: hidden;
 }
 .section__title {
-  font-family   : "Akrobat", sans-serif;
-  font-weight   : normal;
-  font-size     : 38px;
-  text-align    : left;
-  color         : #8f8f8f;
+  font-family: "Akrobat", sans-serif;
+  font-weight: normal;
+  font-size: 38px;
+  text-align: left;
+  color: #8f8f8f;
   text-transform: uppercase;
-  margin-bottom : 48px;
-  position      : relative;
+  margin-bottom: 48px;
+  position: relative;
 
   &::after {
-    content         : "";
-    display         : block;
-    position        : absolute;
-    bottom          : -20px;
-    left            : 0;
-    width           : 55px;
-    height          : 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 55px;
+    height: 2px;
     background-color: #d21113;
   }
 }
@@ -82,21 +84,18 @@ body {
 @import "./_teams";
 @import "./_stocks";
 @import "./_gallery";
-@import './_contacts';
-@import './_footer';
-
+@import "./_contacts";
+@import "./_footer";
 
 .intro {
   background-color: #fff;
 
   &.black {
-    transition      : all 1.5s linear;
+    transition: all 1.5s linear;
     background-color: black;
   }
 
   & .header__logo {
-   
-
     & .white {
       transition: all 1.5s linear;
       fill: #fff;
