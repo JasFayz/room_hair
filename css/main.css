@@ -494,6 +494,7 @@ body {
 }
 
 .about .btn {
+  border-radius: 0;
   padding: 20px 30px;
   font-family: Montserrat;
   font-weight: bold;
@@ -510,8 +511,17 @@ body {
   background-color: #d21113;
 }
 
+.about .btn__danger:hover {
+  background-color: #a30d0f;
+}
+
 .about .btn__outline {
   border: 3px solid #fff;
+}
+
+.about .btn__outline:hover {
+  background-color: white;
+  color: black;
 }
 
 .about .video {
@@ -896,14 +906,25 @@ body {
   min-width: 286px;
   border-radius: 0;
   margin-bottom: 30px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .footer__content__top .btn__danger {
   background-color: #d21113;
 }
 
+.footer__content__top .btn__danger:hover {
+  background-color: #a30d0f;
+}
+
 .footer__content__top .btn__outline {
   border: 3px solid #fff;
+}
+
+.footer__content__top .btn__outline:hover {
+  background-color: white;
+  color: black;
 }
 
 .footer__content__bottom {
