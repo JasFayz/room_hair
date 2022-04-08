@@ -1,0 +1,64 @@
+.page {
+  &__content {
+    & .breadcrumb {
+      margin-top: 58px;
+      padding-bottom: 20px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 55px;
+        height: 2px;
+        background-color: #d21113;
+        z-index: 1;
+      }
+      &-item {
+        font-family: "Akrobat", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        color: #8f8f8f;
+        text-transform: uppercase;
+        padding-right: 20px;
+        position: relative;
+        &:last-child {
+          &::before {
+            content: none;
+          }
+        }
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5.123' height='9' viewBox='0 0 5.123 9'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M4.5,0,9,5.123H0Z' transform='translate(5.123) rotate(90)' fill='%23d21113'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+        }
+        & > a {
+          font-family: "Akrobat", sans-serif;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: left;
+          color: #8f8f8f;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: all 0.3s linear;
+          &:hover {
+            color: #d21113;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

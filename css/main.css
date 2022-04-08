@@ -990,6 +990,110 @@ body {
   background-size: 100%;
 }
 
+.page__content .breadcrumb {
+  margin-top: 58px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.page__content .breadcrumb::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55px;
+  height: 2px;
+  background-color: #d21113;
+  z-index: 1;
+}
+
+.page__content .breadcrumb-item {
+  font-family: "Akrobat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  padding-right: 20px;
+  position: relative;
+}
+
+.page__content .breadcrumb-item:last-child::before {
+  content: none;
+}
+
+.page__content .breadcrumb-item:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5.123' height='9' viewBox='0 0 5.123 9'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M4.5,0,9,5.123H0Z' transform='translate(5.123) rotate(90)' fill='%23d21113'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.page__content .breadcrumb-item > a {
+  font-family: "Akrobat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.page__content .breadcrumb-item > a:hover {
+  color: #d21113;
+}
+
+.sidebar {
+  background-color: #1a1a1a;
+}
+
+.sidebar .list-group-item[aria-level="1"] {
+  padding: 24px;
+  background-color: #1a1a1a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+}
+
+.sidebar .list-group-item[aria-level="2"] {
+  padding: 19px;
+  background-color: #1a1a1a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+  border-bottom: 2px solid #303030;
+}
+
+.sidebar .list-group-item[aria-level="3"] {
+  padding: 19px;
+  background-color: #1a1a1a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+}
+
+.sidebar .bstreeview {
+  border-radius: 0;
+  border: none;
+  background-color: #1a1a1a;
+}
+
 .intro {
   background-color: #fff;
 }

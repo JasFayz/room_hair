@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: #1a1a1a;
+  & .list-group-item[aria-level="1"] {
+    padding: 24px;
+    background-color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    
+  }
+  & .list-group-item[aria-level="2"] {
+    padding: 19px;
+    background-color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 2px solid #303030;
+  }
+  & .list-group-item[aria-level="3"] {
+    padding: 19px;
+    background-color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+
+    text-align: left;
+    color: #fff;
+  }
+  & .bstreeview {
+    border-radius: 0;
+    border: none;
+    background-color: #1a1a1a;
+  }
+}
