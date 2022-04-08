@@ -10,31 +10,59 @@
 
 /* FONTS LOAD SECTION */
 @font-face {
-  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
-  font-family: "roboto-st";
-  font-weight: 400;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-style: normal;
+  font-weight: 600;
 }
 
 @font-face {
-  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
-  font-family: "roboto-st";
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
-  font-family: "roboto-st";
-  font-weight: 700;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
   font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
-  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
-  font-family: "roboto-st";
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Akrobat";
+  src: url("../fonts/Akrobat-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* GENERAL CSS SETTINGS */
@@ -814,7 +842,7 @@ body {
 }
 
 .footer__content__top .section__title {
-  padding-right: 250px;
+  padding-right: 200px;
 }
 
 .footer__content__top .title {
