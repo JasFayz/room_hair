@@ -8,7 +8,25 @@
     font-size: 16px;
     text-align: left;
     color: #fff;
-    
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(0);
+      right: 22px;
+      width: 15px;
+      height: 15px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='8.123' viewBox='0 0 15 8.123'%3E%3Cpath id='Polygon_3' data-name='Polygon 3' d='M7.5,0,15,8.123H0Z' transform='translate(15 8.123) rotate(180)' fill='%23d21113'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: 0;
+      transition: all 0.3s linear;
+    }
+    &.collapsed {
+      &::before {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
   }
   & .list-group-item[aria-level="2"] {
     padding: 19px;
@@ -19,6 +37,9 @@
     text-align: left;
     color: #fff;
     border-bottom: 2px solid #303030;
+    &:hover {
+      border-bottom: 2px solid #303030 !important;
+    }
   }
   & .list-group-item[aria-level="3"] {
     padding: 19px;
@@ -26,13 +47,34 @@
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-size: 16px;
-
     text-align: left;
     color: #fff;
+    position: relative;
+    padding-left: 90px !important;
+    border-bottom: 2px solid #303030 !important;
+    &:hover {
+      border-bottom: 2px solid #303030 !important;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-color: #616161;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 55px;
+      transform: translateY(-50%);
+    }
+  }
+  &.list-group {
+    padding: 0 20px;
   }
   & .bstreeview {
     border-radius: 0;
     border: none;
     background-color: #1a1a1a;
+    
   }
 }

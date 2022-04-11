@@ -900,7 +900,7 @@ body {
 
 .footer__content__top .btn {
   padding: 20px 30px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.2;
@@ -994,6 +994,7 @@ body {
   margin-top: 58px;
   padding-bottom: 20px;
   position: relative;
+  background-color: transparent;
 }
 
 .page__content .breadcrumb::after {
@@ -1053,6 +1054,73 @@ body {
   color: #d21113;
 }
 
+.page__content .service__panel {
+  padding: 37px 75px 49px 53px;
+  background-color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.page__content .service__panel .title {
+  font-family: "Akrobat", sans-serif;
+  font-weight: normal;
+  font-size: 47px;
+  text-align: left;
+  color: #909090;
+  margin-bottom: 19px;
+}
+
+.page__content .service__panel .subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  padding-right: 45px;
+}
+
+.page__content .service__panel .btn__danger {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: #fff;
+  padding: 20px 50px;
+  background-color: #d21113;
+  border-color: #d21113;
+  text-transform: uppercase;
+  border-radius: 0;
+  margin-top: 15px;
+}
+
+.page__content .service__table th {
+  background-color: #757575;
+  border-top: none;
+  border-bottom: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 47px;
+  text-align: left;
+  color: #fff;
+}
+
+.page__content .service__table td {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: left;
+  color: #fff;
+  padding: 22px 26px;
+  border-bottom: none;
+  border-top: none;
+}
+
+.page__content .service__table tr:nth-child(odd) td {
+  background-color: #1a1a1a;
+}
+
 .sidebar {
   background-color: #1a1a1a;
 }
@@ -1067,6 +1135,28 @@ body {
   color: #fff;
 }
 
+.sidebar .list-group-item[aria-level="1"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+  right: 22px;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='8.123' viewBox='0 0 15 8.123'%3E%3Cpath id='Polygon_3' data-name='Polygon 3' d='M7.5,0,15,8.123H0Z' transform='translate(15 8.123) rotate(180)' fill='%23d21113'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.sidebar .list-group-item[aria-level="1"].collapsed::before {
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+}
+
 .sidebar .list-group-item[aria-level="2"] {
   padding: 19px;
   background-color: #1a1a1a;
@@ -1078,6 +1168,10 @@ body {
   border-bottom: 2px solid #303030;
 }
 
+.sidebar .list-group-item[aria-level="2"]:hover {
+  border-bottom: 2px solid #303030 !important;
+}
+
 .sidebar .list-group-item[aria-level="3"] {
   padding: 19px;
   background-color: #1a1a1a;
@@ -1086,6 +1180,31 @@ body {
   font-size: 16px;
   text-align: left;
   color: #fff;
+  position: relative;
+  padding-left: 90px !important;
+  border-bottom: 2px solid #303030 !important;
+}
+
+.sidebar .list-group-item[aria-level="3"]:hover {
+  border-bottom: 2px solid #303030 !important;
+}
+
+.sidebar .list-group-item[aria-level="3"]::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #616161;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 55px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sidebar.list-group {
+  padding: 0 20px;
 }
 
 .sidebar .bstreeview {
